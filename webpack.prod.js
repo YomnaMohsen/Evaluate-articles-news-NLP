@@ -14,7 +14,7 @@ module.exports = {
     },
     mode: 'production',
     output: {
-        path: path.join(__dirname, 'dist'),
+       // path: path.join(__dirname, 'dist'),
         libraryTarget: 'var',
         library: 'Client'
     },
@@ -27,7 +27,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [ 'MiniCssExtractPlugin.loader', 'css-loader', 'sass-loader' ]
+                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader' ]
         }
         ]
     },
