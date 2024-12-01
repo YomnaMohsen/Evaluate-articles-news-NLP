@@ -20,6 +20,11 @@ function handleSubmit(event) {
     // Check if the URL is valid
  
         // If the URL is valid, send it to the server using the serverURL constant above
+         fetch('http://localhost:8081/test')
+        .then(res => res.json())
+        .then(function (res) {
+            document.getElementById('results').innerHTML = res.name;
+        })
       
 }
 

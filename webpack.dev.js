@@ -15,10 +15,10 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader"
             },
-            {
+             {
                 test: /\.scss$/,
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-        }
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ]
     },
     plugins: [
@@ -26,7 +26,7 @@ module.exports = {
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
-        new CleanWebpackPlugin({
+         new CleanWebpackPlugin({
             // Simulate the removal of files
             dry: true,
             // Write Logs to Console
@@ -35,9 +35,6 @@ module.exports = {
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
         })
-    ],
-    devServer: {
-        port: 3000,
-        allowedHosts: 'all'
-    }
+    ]
 }
+
