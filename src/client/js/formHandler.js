@@ -53,7 +53,11 @@ function Update_UI(Result){
 
 
 }
-form.addEventListener('submit', handleSubmit);
+
+if(form){
+    form.addEventListener('submit', handleSubmit);
+}
+
 
 
 // Export the handleSubmit function
