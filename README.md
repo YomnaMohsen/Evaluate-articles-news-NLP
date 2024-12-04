@@ -67,7 +67,7 @@ npm run test
 
 ### Running in Development Mode
 
-1. Run the following command at root of project directory, to start webpack dev-server and generate dist folder.
+1. Run the following command at root of project directory, to start webpack dev-server.
 
 ```
 npm run build-dev
