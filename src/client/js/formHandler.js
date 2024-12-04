@@ -44,14 +44,14 @@ async function  handleSubmit(event) {
 }
 
 function Update_UI(Result){
-    document.getElementById("agreement").innerHTML = `Agreement: ${Result.aggreement}`;
-    document.getElementById("confidence").innerHTML = `confidence: ${Result.confidence}`;
-    document.getElementById("irony").innerHTML = `Irony: ${Result.irony}`;
-    document.getElementById("score_tag").innerHTML = `Score_tag: ${Result.score_tag}`;
-    document.getElementById("subjectivity").innerHTML = `Subjectivity: ${Result.subjectivity}`;
-    document.getElementById("text").innerHTML = `Text: ${Result.text}`;
-
-
+    document.getElementById("results").innerHTML= `<i class= "strong">Analysis Results</i>`
+    document.getElementById("agreement").innerHTML = `<i class= "strong">Agreement</i>: ${Result.agreement}`;
+    document.getElementById("confidence").innerHTML = `<i class= "strong">Confidence</i>: ${Result.confidence}`;
+    document.getElementById("irony").innerHTML = `<i class= "strong">Irony</i>: ${Result.irony}`;
+    document.getElementById("score_tag").innerHTML = `<i class= "strong">Score_tag</i>: ${Result.score_tag}`;
+    document.getElementById("subjectivity").innerHTML = `<i class= "strong">Subjectivity</i>: ${Result.subjectivity}`;
+    document.getElementById("text").innerHTML = `<i class= "strong">Text</i>: ${Result.text}`;
+    document.getElementById("analysis").classList.add("results-style");
 }
 
 if(form){

@@ -9,12 +9,7 @@
 <body>
 
     <header>
-        <div class="">
-            Logo
-        </div>
-        <div class="">
-            navigation
-        </div>
+        Sentiment Analysis
     </header>
 
     <main>
@@ -22,24 +17,27 @@
             <form id="urlForm">
                 <input id="name" type="text" name="url" placeholder="Enter URL" required>
                 <div id="Urlerror" style="display: none"></div>
-                <button id="submitButton" type="submit">Submit</button>
+                <button id="submitButton" type="submit">Submit Request</button>
+                <div id="analysis">
+                    <div id="results"></div>
+                    <div id="agreement"></div>
+                    <div id="confidence"></div>
+                    <div id="irony"></div>
+                    <div id="score_tag"></div>
+                    <div id="subjectivity"></div>
+                    <div id="text"></div>
+                </div>
             </form>
-
+           
         </section>
 
-        <section>
-            <strong>Form Results:</strong>
-            <div id="agreement"></div>
-            <div id="confidence"></div>
-            <div id="irony"></div>
-            <div id="score_tag"></div>
-            <div id="subjectivity"></div>
-            <div id="text"></div>
-        </section>
+   
+            
+
     </main>
 
     <footer>
-        <p>This is a footer</p>
+        <p>&copy; 2024</p>
     </footer>
 
 </body>

@@ -1,0 +1,11 @@
+$font-color : #D35400;
+$primary-color: #F2E3C6;
+
+footer {
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 10px 40px;
+    font-size: 2em;
+    height: 60px;
+    text-align: center;
+}
