@@ -50,7 +50,6 @@ function Update_UI(Result){
     document.getElementById("irony").innerHTML = `<i class= "strong">Irony</i>: ${Result.irony}`;
     document.getElementById("score_tag").innerHTML = `<i class= "strong">Score_tag</i>: ${Result.score_tag}`;
     document.getElementById("subjectivity").innerHTML = `<i class= "strong">Subjectivity</i>: ${Result.subjectivity}`;
-    document.getElementById("text").innerHTML = `<i class= "strong">Text</i>: ${Result.text}`;
     document.getElementById("analysis").classList.add("results-style");
 }
 

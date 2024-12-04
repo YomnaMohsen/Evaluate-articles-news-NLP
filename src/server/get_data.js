@@ -14,14 +14,12 @@ async function get_articles(Url){
 //formulate response
 function incoming_response(response){
     const {agreement, confidence, irony, score_tag, subjectivity} = response;
-    const text = response.sentence_list[0].segment_list[0].polarity_term_list[0].text;
     const final_text ={
         agreement,
         confidence,
         irony,
         score_tag,
-        subjectivity,
-        text :text
+        subjectivity
     }
     return final_text;
 }
