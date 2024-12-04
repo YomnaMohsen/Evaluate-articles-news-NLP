@@ -107,6 +107,6 @@ npm run start
 
 4.open `http://localhost:8081/` in your browser.
 
-## Authors
+## Author
 
 Yomna Mohsen
